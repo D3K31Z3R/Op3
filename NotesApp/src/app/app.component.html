@@ -1,0 +1,7 @@
+<h2>Users</h2>
+
+<div *ngFor="let user of users; index as id">
+  <a [title]="user.name">
+    {{user.name}}
+  </a>
+</div>
