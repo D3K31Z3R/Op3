@@ -1,0 +1,8 @@
+<h2>Notes</h2>
+<div *ngFor="let notes of notes">
+  <div class="mat-card">
+    <h5 class="mat-card-title">{{note.title}}</h5>
+    <p class="mat-card-content">{{note.content}}</p>
+    <button class="mat-raised-button mat-primary" (click)="deleteNote(note.id)">Delete</button>
+  </div>
+</div>

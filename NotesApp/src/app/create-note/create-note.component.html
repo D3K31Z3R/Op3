@@ -1,0 +1,16 @@
+<mat-form-field>
+  <div class="mat-form-field">
+    <label for="notesTitle">Title</label>
+    <mat-label>
+      <label>
+        <input class="form-control" type="text" name="noteTitle" [(ngModel)]="noteTitle">
+      </label>
+    </mat-label>
+  </div>
+  <div class="mat-form-field">
+    <label for="notesTitle">Content</label>
+    <label for="noteContent"></label><textarea class="form-control" rows="4" name="noteContent" id="noteContent"
+                                               [(ngModel)]="noteContent"></textarea>
+  </div>
+  <button type="submit" class="mat-raised-button mat-primary" (click)="addNote()">Create</button>
+</mat-form-field>
